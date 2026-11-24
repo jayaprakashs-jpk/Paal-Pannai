@@ -1,0 +1,4 @@
+# Copy to supabase/config.toml if you use the Supabase CLI.
+# Edge function needs the caller's JWT, so keep verify_jwt = true (default).
+[functions.ocr-extract]
+verify_jwt = true

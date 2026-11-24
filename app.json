@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "Nammoor Pannai",
+    "slug": "nammoor-pannai",
+    "scheme": "nammoorpannai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1B5E20"
+    },
+    "android": {
+      "package": "com.nammoorpannai.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B5E20"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "POST_NOTIFICATIONS",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "blockedPermissions": [
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Nammoor Pannai uses your location to mark sheds, grazing areas, weather and delivery distance."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Used to scan QR ear tags and photograph milk notebooks and bills.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Used to attach animal and listing photos.",
+          "cameraPermission": "Used to photograph animals, notebooks and bills."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#1B5E20"
+        }
+      ]
+    ]
+  }
+}
