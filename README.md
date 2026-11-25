@@ -1,4 +1,4 @@
-# Nammoor Pannai (நம்மூர் பண்ணை)
+# Paal & Pannai (பால் & பண்ணை)
 
 Offline-first Android app for dairy / livestock / poultry farmers, milk agents, customers and delivery partners.
 React Native + Expo SDK 58 (TypeScript, Expo Router), SQLite on the phone, Supabase in the cloud, English + Tamil.
