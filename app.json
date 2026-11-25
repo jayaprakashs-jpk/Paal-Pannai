@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Nammoor Pannai",
+    "name": "Paal Pannai",
     "slug": "nammoor-pannai",
     "scheme": "nammoorpannai",
     "version": "1.0.0",
@@ -39,7 +39,7 @@
       [
         "expo-location",
         {
-          "locationWhenInUsePermission": "Nammoor Pannai uses your location to mark sheds, grazing areas, weather and delivery distance."
+          "locationWhenInUsePermission": "Paal Pannai uses your location to mark sheds, grazing areas, weather and delivery distance."
         }
       ],
       [

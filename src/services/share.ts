@@ -42,7 +42,7 @@ export function billHtml(bill: Row, party: Row | null, farm: Row | null, payment
     th,td{border-bottom:1px solid #ddd;padding:6px;font-size:12px;text-align:left}.r{text-align:right}
     th{background:#E6F2E6}.tot td{font-weight:bold;font-size:14px}
   </style></head><body>
-  <h1>${esc(farm?.farm_name || 'Nammoor Pannai')}</h1>
+  <h1>${esc(farm?.farm_name || 'Paal Pannai')}</h1>
   <div class="muted">${esc(farm?.owner_name || '')} ${esc(farm?.phone || '')} ${esc(farm?.village || '')}</div>
   <h3>Milk bill ${esc(bill.bill_no)}</h3>
   <div>To: <b>${esc(party?.name || '')}</b> ${esc(party?.phone || '')}</div>
@@ -74,7 +74,7 @@ export async function sharePdf(html: string, title: string): Promise<void> {
 export function billText(bill: Row, party: Row | null, farm: Row | null): string {
   const due = Math.max(0, bill.total - bill.paid_amount);
   return [
-    `*${farm?.farm_name || 'Nammoor Pannai'}* - Milk bill ${bill.bill_no}`,
+    `*${farm?.farm_name || 'Paal Pannai'}* - Milk bill ${bill.bill_no}`,
     `${party?.name || ''}`,
     `${fmtDate(bill.period_start)} to ${fmtDate(bill.period_end)}`,
     `Milk: ${Number(bill.total_litres).toFixed(2)} L`,

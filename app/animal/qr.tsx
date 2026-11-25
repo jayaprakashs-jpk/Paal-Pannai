@@ -23,7 +23,7 @@ export default function AnimalQr() {
         <img src="${qrDataUrl(payload, 6)}" width="260" height="260"/>
         <h2 style="margin:8px 0 0">${String(a.nickname).replace(/</g, '&lt;')}</h2>
         <div style="font-size:18px">${String(a.tag_id ?? '').replace(/</g, '&lt;')}</div>
-        <div style="color:#666;font-size:12px">Nammoor Pannai</div>
+        <div style="color:#666;font-size:12px">Paal Pannai</div>
       </div></body></html>`;
     try { await sharePdf(html, `${a.nickname} tag`); } catch (e: any) { toast(t('Could not create PDF'), String(e?.message ?? e)); }
   };

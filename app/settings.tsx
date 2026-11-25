@@ -92,7 +92,7 @@ export default function Settings() {
         }} />
       </Card>
       <Spacer />
-      <Txt v="small" style={{ textAlign: 'center' }}>Nammoor Pannai 1.0</Txt>
+      <Txt v="small" style={{ textAlign: 'center' }}>Paal Pannai 1.0</Txt>
     </Screen>
   );
 }

@@ -104,7 +104,7 @@ export default function FarmerDelivery() {
               <>
                 <KV k={t('Your farm code')} v={f.code} bold color={C.primary} />
                 <Txt v="small" style={{ marginBottom: S.sm }}>{t('Give this code to your delivery person. They install the app, choose "Delivery partner", and enter it.')}</Txt>
-                <Btn small v="secondary" icon="whatsapp" title={t('Share code')} onPress={() => openWhatsApp('', `${t('Join my farm delivery on Nammoor Pannai. Farm code')}: ${f.code}`)} />
+                <Btn small v="secondary" icon="whatsapp" title={t('Share code')} onPress={() => openWhatsApp('', `${t('Join my farm delivery on Paal Pannai. Farm code')}: ${f.code}`)} />
               </>
             ) : <Txt v="small">{t('Save with internet and sign-in to get your farm code.')}</Txt>}
             {partners.map((p: any) => <KV key={p.partner_user} k={p.partner_name || t('Partner')} v={p.active ? t('Active') : t('Off')} />)}

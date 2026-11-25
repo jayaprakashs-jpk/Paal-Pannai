@@ -1,4 +1,4 @@
--- Nammoor Pannai: marketplace, geofenced delivery, delivery partners, OCR limits.
+-- Paal Pannai: marketplace, geofenced delivery, delivery partners, OCR limits.
 -- Run AFTER 0001_tables.sql.
 --
 -- SECURITY MODEL

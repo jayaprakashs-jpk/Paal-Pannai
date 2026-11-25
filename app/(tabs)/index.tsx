@@ -55,7 +55,7 @@ export default function Home() {
 
   return (
     <Screen>
-      <Txt v="title">{farm?.farm_name ? farm.farm_name : t('Nammoor Pannai')}</Txt>
+      <Txt v="title">{farm?.farm_name ? farm.farm_name : t('Paal Pannai')}</Txt>
       <Txt v="small" style={{ marginBottom: S.md }}>
         {farm?.owner_name ? `${t('Welcome')}, ${farm.owner_name}` : t('Your farm, in your pocket')}
       </Txt>

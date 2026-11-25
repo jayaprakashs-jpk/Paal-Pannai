@@ -33,7 +33,7 @@ export default function ListingDetail() {
   if (!l) return <Screen><Title>{t('Listing')}</Title><Empty text={t('Listing not found')} /></Screen>;
   const d = l.details ?? {};
   const photos = l.photos ?? [];
-  const msg = `${t('Hello, I saw your listing')}: ${l.title} (${formatINR(l.price, 0)}) ${t('on Nammoor Pannai')}.`;
+  const msg = `${t('Hello, I saw your listing')}: ${l.title} (${formatINR(l.price, 0)}) ${t('on Paal Pannai')}.`;
 
   const markSold = async () => {
     const price = toNum(soldPrice, 0);

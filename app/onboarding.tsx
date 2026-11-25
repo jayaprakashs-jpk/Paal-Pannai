@@ -44,8 +44,8 @@ export default function Onboarding() {
   return (
     <Screen>
       <Spacer h={S.xl} />
-      <Txt v="title" color={C.primary}>Nammoor Pannai</Txt>
-      <Txt v="small">நம்மூர் பண்ணை</Txt>
+      <Txt v="title" color={C.primary}>Paal Pannai</Txt>
+      <Txt v="small">பால் பண்ணை</Txt>
       <Spacer />
 
       {step === 0 ? (
